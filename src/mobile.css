@@ -1,0 +1,82 @@
+
+/* CSS para telas menores que 768px (Tablet) */
+@media (max-width: 768px) {
+  /* Ajustando os paddings das seções para evitar margens muito grandes */
+  .section1, .section2, .section3, .section4 {
+    padding: 20px 40px;
+  }
+
+  /* Ajustando o header para manter os elementos visíveis em telas menores */
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Ajustando o tamanho do texto da hero para ser menor */
+  .hero-texto {
+    font-size: 36px;
+    width: 100%; /* Faz com que ocupe toda a largura em telas menores */
+    text-align: center;
+  }
+
+  /* Ajustando o layout da .section2 para exibir os elementos em coluna */
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section2 img {
+    width: 100%;
+    height: auto; /* Mantém proporção em telas pequenas */
+  }
+  .txt-right {
+    position: static; /* Para centralizar e evitar sobreposição */
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Reduzindo o grid para duas colunas em telas menores */
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CSS para telas menores que 480px (Smartphone) */
+@media (max-width: 480px) {
+  /* Ajustando o padding para telas muito pequenas */
+  .section1, .section2, .section3, .section4 {
+    padding: 10px 20px;
+  }
+
+  /* Ajustando o tamanho do texto e layout da hero para dispositivos pequenos */
+  .hero-texto {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  /* Ajustando o layout da seção 2 para ocupar menos espaço */
+  .txt-right h1 {
+    font-size: 32px;
+  }
+  .txt-right p {
+    font-size: 14px;
+  }
+
+  /* Configurando o grid para uma coluna em telas muito pequenas */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajustando o footer para alinhar em coluna */
+  .section4 {
+    padding: 20px;
+  }
+  .top4, .bottom4 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .icones img {
+    padding: 5px;
+  }
+}
